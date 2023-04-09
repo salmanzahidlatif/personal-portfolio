@@ -8,8 +8,8 @@ import "../css/styles.css";
 const MyApp = ({ Component, pageProps }: AppProps) => {
 	// Color Mode Management
 	const savedColorMode = typeof window === "undefined" ? "" : localStorage.getItem("color-mode");
-	const [colorMode, setColorMode] = useState(savedColorMode || "light");
-	
+	const [colorMode, setColorMode] = useState(savedColorMode || "dark");
+
 	const toggleColorMode = () => {
 		const newColorMode = colorMode === "light" ? "dark" : "light";
 		setColorMode(newColorMode);
@@ -20,9 +20,8 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 		...config,
 		isDarkColorMode: colorMode === "dark",
 		toggleColorMode,
-		contentClassName: `antialiased font-content ${colorMode} ${
-			colorMode === "dark" ? "bg-gray-900" : "bg-white"
-		}`,
+		contentClassName: `antialiased font-content ${colorMode} ${colorMode === "dark" ? "bg-gray-900" : "bg-white"
+			}`,
 	};
 
 	return (
