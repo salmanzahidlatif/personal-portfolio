@@ -2,7 +2,7 @@
 
 My Personal Portfolio to showcase my experience, education, projects, hobbies and certifications etc.
 
-View my portfolio [here](https://vercel.com/salus7r/salmanzahidlatif/7mnL4yK6KC3amoPkmoVPzgrWjWTw)
+View my portfolio [here](https://salmanzahidlatif.vercel.app/)
 
 # React Bricks starter with Next.js with Tailwind CSS and React Bricks UI
 
